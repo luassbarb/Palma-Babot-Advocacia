@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #003938;
+  ;
+  --secondary-color: gold;
+
+  --heading-font: 'Roboto Slab', serif-sans;
+  --paragraph-font: 'Noto Sans', serif-sans;
+}
+
+header img {
+    margin: -1rem 0.25rem 0 1rem;
+    width: 330;
+    height: auto;
+    margin-left: 0;
+    display: block;
+  }
+  
+  h2 {
+    /*color: lightgoldenrodyellow;*/
+    text-align: center;
+    max-width: 100%; /* Alterado para evitar que o texto ultrapasse a largura da janela */
+    font-size: 10rem;
+    white-space: nowrap;
+    display: block; /* Adicionado para que o <h2> fique em uma linha abaixo da imagem */
+    margin: 0 auto;
+    color: var(--primary-color);
+  }
+
+  h3 {
+    /*color: lightgoldenrodyellow;*/
+    text-align: center;
+    max-width: 100%; /* Alterado para evitar que o texto ultrapasse a largura da janela */
+    font-size: 3rem;
+    white-space: nowrap;
+    display: block; /* Adicionado para que o <h2> fique em uma linha abaixo da imagem */
+    margin: 0 auto;
+    color: var(--primary-color);
+  }
+
+p {
+    /*color: silver;*/
+    text-align: center;
+    width: 100%; /* Alterado para evitar que o texto ultrapasse a largura da janela */
+    font-size: 2rem;
+    white-space: nowrap; /*tira a quebra de texto*/
+    margin: 0 auto;
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+
+img{
+    display: block;
+}
+  nav{
+  text-align : right;
+  }
+  .navigation {
+  display : flex;
+  list-style : none;
+  }
+  .navigation li {
+  flex : 1 1 100%;
+  }
+  .navigation a {
+  display : block;
+  color : #CAD593;
+  padding : 30px;
+  text-decoration : none;
+  }
+  .navigation a:hover {
+  color : #A1C349;
+  font-weight : 800;
+  text-decoration : underline;
+  }
+
+body {
+    margin: 0 auto;
+    width: 90%;
+    min-width: 600px;
+    max-width: 2000px;
+    height: 100%;
+    padding: 300px;
+    background-color: black;
+    background: linear-gradient(black, #8080804d );  
+    background: linear-gradient(
+  90deg,
+  black (34, 36, 0) 0%,
+  lightgoldenrodyellow (34, 36, 0) 35%,
+  lightgoldenrodyellow (189, 157, 0)  100%,);
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  width: 300px; /* ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+.caption {
+  margin-top: 10px;
+}
+
+
+  footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+    }
