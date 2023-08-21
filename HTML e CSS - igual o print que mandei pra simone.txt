@@ -1,0 +1,250 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palma Babot Advocacia</title>
+    <meta name="description" content="Advocacia">
+    <meta name="author" content="Cristiane Palma Babot">
+    <link rel="stylesheet" href="styles/babotadvocacia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="section" id="section1">
+        <div class="section-content" style="background-color: var(--tertiary-color);">
+            <div class="menu">
+                <img src="images/logoblack-semfundo.png" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#quem-somos">QUEM SOMOS</a></li>
+                    <li><a href="#areas-de-atuacao">ÁREAS DE ATUAÇÃO</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section" id="section2">
+        <div class="section-content" style="background-color: var(--quaternary-color);">
+            <header>
+                <h2> PALMA BABOT ADVOCACIA</h2>
+                <h3>Especializada e dedicada em Inventário, Herança e Partilha de bens</h3>
+                <br>
+                <br>
+                <p>Palma Babot Advocacia é especializada em regularizar qualquer pendência de imóveis, inventários, partilha de bens e testamentos em vida. O nosso propósito é resolver situações jurídicas de forma descomplicada e mais rápida possível. Aqui você encontra suporte para suas dúvidas e acompanhamento personalizado.</p>
+            </header>
+        </div>
+    </div>
+
+    <div class="section" id="section3">
+        <div class="section-content" style="background-color: var(--tertiary-color);">
+
+            <img src="images/cristianebabothomesemfundo.png" alt="Fotografia de Cristiane Palma Babot" width="200">
+            <p2>Especialista em</p2>
+        </div>
+    </div>
+
+    <div class="section" id="section4">
+        <div class="section-content" style="background-color: var(--quaternary-color);">
+            <div class="image-gallery">
+                <div class="image-container">
+                    <a href="https://www.facebook.com"><img src="images/inventario.webp" alt="Inventário"></a>
+                    <p class="caption">Inventário</p>
+                </div>
+                <div class="image-container">
+                    <a href="https://www.facebook.com"><img src="images/partilhadebens.jpg" alt="Partilha de bens"></a>
+                    <p class="caption">Direito da família e divórcio</p>
+                </div>
+                <div class="image-container">
+                    <a href="https://www.facebook.com"><img src="images/pendenciasdeimoveis.webp" alt="Pendencias de imóveis"></a>
+                    <p class="caption">Pendências de Imóveis</p>
+                </div>
+                <div class="image-container">
+                    <a href="https://www.facebook.com"><img src="images/testamentoemvida.jpg" alt="Partilha de Bens e Testamento em vida"></a>
+                    <p class="caption">Partilha de Bens e Testamento em vida</p>
+                </div>
+                <div class="image-container">
+                    <a href="https://www.facebook.com"><img src="images/inventario.webp" alt="Divorcio Estrangeiro"></a>
+                    <p class="caption">Divórcio Estrangeiro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2020 Palma Babot Advocacia</p>
+    </footer>
+  </body>
+  
+  </html>
+
+
+
+
+
+CSS
+
+:root {
+  --primary-color: lightgoldenrodyellow;
+  --secondary-color: gold;
+  --tertiary-color: #8080804d;
+  --quaternary-color: linear-gradient(
+    90deg,
+    black 0%,
+    gray 35%,
+    rgb(51, 49, 49) 100%
+  );
+  --heading-font: 'Roboto Slab', serif-sans;
+  --paragraph-font: 'Noto Sans', serif-sans;
+}
+
+.section {
+  flex: 1;
+}
+
+.section-content {
+  padding: 20px;
+}
+
+  h2 {
+    /*color: lightgoldenrodyellow;*/
+    text-align: center;
+    max-width: 100%; /* Alterado para evitar que o texto ultrapasse a largura da janela */
+    font-size: 7rem;
+    white-space: nowrap;
+    display: block; /* Adicionado para que o <h2> fique em uma linha abaixo da imagem */
+    margin: 0 auto;
+    color: #063633;
+  }
+
+  h3 {
+    /*color: lightgoldenrodyellow;*/
+    text-align: center;
+    max-width: 100%; /* Alterado para evitar que o texto ultrapasse a largura da janela */
+    font-size: 3rem;
+    white-space: nowrap;
+    display: block; /* Adicionado para que o <h2> fique em uma linha abaixo da imagem */
+    margin: 0 auto;
+    color: #063633;
+  }
+
+p {
+    /*color: silver;*/
+    text-align: center;
+    width: 100%; /* Alterado para evitar que o texto ultrapasse a largura da janela */
+    font-size: 2rem;
+    margin: 0 auto;
+   
+    color: #063633;
+}
+
+img{
+    display: block;
+}
+  nav{
+  text-align : right;
+  }
+  .navigation {
+  display : flex;
+  list-style : none;
+  }
+  .navigation li {
+  flex : 1 1 100%;
+  }
+  .navigation a {
+  display : block;
+  color : #CAD593;
+  padding : 30px;
+  text-decoration : none;
+  }
+  .navigation a:hover {
+  color : #A1C349;
+  font-weight : 800;
+  text-decoration : underline;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 20px; /* Margens laterais */
+    max-width: calc(100% - 40px); /* Leva em consideração as margens laterais */
+    overflow: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+.caption {
+  margin-top: 10px;
+}
+
+
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+    }
+
+    .menu {
+
+      color: lightgoldenrodyellow;
+      padding: 10px 0;
+      border: none; /* Remove a borda */
+      display: flex; /* Para alinhar o conteúdo à direita */
+      justify-content: flex-end; /* Alinha o conteúdo à direita */
+      align-items: center; /* Centraliza verticalmente */
+      margin-bottom: 20px; /* Espaço abaixo do menu */
+  }
+  
+  .menu ul {
+      list-style: none;
+      padding: 0;
+      display: flex; /* Torna as li's em um flex container */
+  }
+  
+  .menu li {
+      margin-right: 50px; /* Espaçamento entre as opções do menu */
+  }
+  
+  .menu a {
+      text-decoration: none;
+      color: #063633;
+      font-size: 25px; /* Tamanho da fonte aumentado */
+      font-weight: bold;
+      transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+      color: rgb(200, 170, 0);
+  }
+
+  .menu .logo {
+    width: 150px;
+    margin-right: 20px;
+}
+  
+.content {
+  padding: 20px;
+  margin-top: 20px; /* Espaçamento entre o menu e o conteúdo */
+  margin-bottom: auto; /* Alinha o conteúdo ao fundo */
+}

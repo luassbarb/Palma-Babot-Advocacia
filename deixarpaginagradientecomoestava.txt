@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+    background: linear-gradient(black, #8080804d);
+    background: linear-gradient(
+        90deg,
+        black (34, 36, 0) 0%,
+        lightgoldenrodyellow (34, 36, 0) 35%,
+        lightgoldenrodyellow (189, 157, 0) 100%,
+    );
+    margin: 0 20px; /* Margens laterais */
+    max-width: calc(100% - 40px); /* Leva em consideração as margens laterais */
+    overflow: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+
+
+se eu quiser tudo gradiente como antes, retiro as section e ponho esse codigo.
